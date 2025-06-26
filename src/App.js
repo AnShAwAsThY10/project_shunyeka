@@ -21,6 +21,8 @@ const nodeTypes = {
   paymentCountrySelect: PaymentCountrySelect,
 };
 
+const amt = true || document.getElementById("box2-input").value;
+
 const edgeTypes = {
   paymentCustomEdge: PaymentCustomEdge,
 };
@@ -29,7 +31,7 @@ export var initialNodes = [
   {
     id: "1",
     position: { x: 100, y: 140 },
-    data: { amount: 10 },
+    data: { amount: amt },
     type: "paymentdis",
   },
   {

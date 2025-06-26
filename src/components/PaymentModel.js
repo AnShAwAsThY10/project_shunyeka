@@ -4,7 +4,7 @@ import "../App.css";
 
 
 
-
+const intAmt = 0
 export default function PaymentModel( {data} ) {
     return (
       <>
@@ -12,7 +12,7 @@ export default function PaymentModel( {data} ) {
         <p>Payment Initialized</p>
         <Handle type="source" position="right" />
         <div className="box-2">
-        < p>${data.amount}</p>
+        <input className id="box2-input" value={intAmt} placeholder={data.amount}></input>
         </div>
       </div>
       
