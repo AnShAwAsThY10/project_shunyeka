@@ -5,13 +5,13 @@ import "@xyflow/react/dist/style.css";
 import "./App.css";
 import SidePanel from "./components/sidePanel";
 import PaymentModel from "./components/PaymentModel";
+import inputValue from './components/PaymentModel';
 import PaymentCountry from "./components/PaymentCountry";
 import PaymentProvider from "./components/PaymentProvider";
 import PaymentProviderSelect from "./components/PaymentProviderSelect";
 import PaymentCountrySelect from "./components/PaymentCountrySelect";
 import { v4 as uuidv4 } from "uuid";
 import PaymentCustomEdge from "./components/PaymentCustomEdge";
-
 
 const nodeTypes = {
   paymentdis: PaymentModel,
@@ -21,7 +21,7 @@ const nodeTypes = {
   paymentCountrySelect: PaymentCountrySelect,
 };
 
-const amt = true || document.getElementById("box2-input").value;
+// const value = document.getElementById("box2-input").value;
 
 const edgeTypes = {
   paymentCustomEdge: PaymentCustomEdge,
@@ -31,25 +31,25 @@ export var initialNodes = [
   {
     id: "1",
     position: { x: 100, y: 140 },
-    data: { amount: amt },
+    data: { amount: inputValue},
     type: "paymentdis",
   },
   {
     id: "2",
     position: { x: 300, y: 130 },
-    data: { currency: "$", country: "United States", countryCode: "US", id:"2" },
+    data: { currency: "$", country: "United States", countryCode: "US", id:"2", cRate : 1.0},
     type: "paymentcountry",
   },
   {
     id: "4",
     position: { x: 300, y: 220 },
-    data: { currency: "₹", country: "India", countryCode: "IN", id:"4" },
+    data: { currency: "₹", country: "India", countryCode: "IN", id:"4" , cRate : 85.67 },
     type: "paymentcountry",
   },
   {
     id: "5",
     position: { x: 550, y: 25 },
-    data: { name: "Google Pay", code: "Gp", id:"5" },
+    data: { name: "Google Pay", code: "Gp", id:"5" ,  },
     type: "paymentProvider",
   },
   {

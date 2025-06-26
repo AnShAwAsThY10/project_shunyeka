@@ -104,6 +104,30 @@
   border-radius: 5px;
   justify-content: center;
 }
+
+.box-2{
+  background-color: #35c1e76b;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+#box2-input{
+  background-color: #ffffff00;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+
+#box2-input::placeholder{
+  color: #282c34;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+}
+
 .col-1 {
   background-color: #e6d6d6bb;
   height: 70px;

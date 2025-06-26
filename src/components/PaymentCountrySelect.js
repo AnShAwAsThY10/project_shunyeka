@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 const PaymentCountries = [
-    { countryCode: "JP", country: "Japan", currency: "¥" },
-    { countryCode: "CN", country: "China", currency: "¥" },
-    { countryCode: "GB", country: "England", currency: "£" },
-    { countryCode: "US", country: "United States", currency: "$" },
-    { countryCode: "IN", country: "India", currency: "₹" },
-    { countryCode: "RS", country: "Russia", currency: "₽" }
+    { countryCode: "JP", country: "Japan", currency: "¥" , cRate : 144 },
+    { countryCode: "CN", country: "China", currency: "¥", cRate : 7.17 },
+    { countryCode: "GB", country: "England", currency: "£",  cRate : 0.73 },
+    { countryCode: "US", country: "United States", currency: "$" ,cRate : 1.0},
+    { countryCode: "IN", country: "India", currency: "₹" ,cRate : 85.67},
+    { countryCode: "RS", country: "Russia", currency: "₽", cRate : 78.78 }
 ];
 
 export default function PaymentCountrySelect() {
